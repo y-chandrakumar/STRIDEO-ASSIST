@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: azure;
+}
+.naav{
+    background-color: skyblue;
+}
+
+.bgvid{
+    position: absolute;
+    z-index: -100;
+    
+}
+
+.gradient-corner {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #87CEEB; /* Sky blue background color */
+}
+
+.gradient-corner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; /* Adjust width of gradient */
+    height: 100px; /* Adjust height of gradient */
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.5), transparent); /* Adjust gradient colors and size */
+}
